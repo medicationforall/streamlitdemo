@@ -18,7 +18,7 @@ def load_data(nrows=12):
 
 data_load_state = st.text('Loading data...')
 
-row_count = st.selectbox('rows',(10, 100, 1000))
+row_count = st.selectbox('rows',(10, 100, 1000), 2)
 my_data = load_data(row_count)
 
 #update the existing text control
